@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CustomLibrary</string>
+    <string name="show">values-sw600</string>
+</resources>

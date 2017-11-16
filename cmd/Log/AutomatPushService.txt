@@ -1,0 +1,673 @@
+09-22 03:11:00:847 DEBUG [service.NotificationService]-[line:75] bcl debug PushServiceMqtt serverAddr: znj.bcl.com.cn:80
+09-22 03:11:00:859 DEBUG [service.NotificationService]-[line:310] bcl debug current version: 2.04.00.A3
+09-22 03:11:03:000 DEBUG [service.NotificationService]-[line:404] getAddrFromServer: tcp://182.92.118.251:1883
+09-22 03:11:03:001 DEBUG [service.NotificationService]-[line:410] 推送启用！
+09-22 03:11:03:641 DEBUG [service.NotificationService]-[line:266] 连接推送服务器成功
+09-22 03:11:23:864 DEBUG [service.NotificationService]-[line:298] 主程序已同步推送状态
+09-22 10:21:48:302 DEBUG [service.NotificationService]-[line:501] 无法连接至服务器 (32103) - java.net.ConnectException: failed to connect to /182.92.118.251 (port 1883) after 10000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(SourceFile:79)
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(SourceFile:650)
+	at java.lang.Thread.run(Thread.java:856)
+Caused by: java.net.ConnectException: failed to connect to /182.92.118.251 (port 1883) after 10000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:114)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
+	at java.net.Socket.connect(Socket.java:842)
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(SourceFile:70)
+	... 2 more
+Caused by: libcore.io.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:85)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:144)
+	at libcore.io.IoBridge.connect(IoBridge.java:112)
+	... 6 more
+
+09-22 10:21:48:309 DEBUG [service.NotificationService]-[line:280] 连接推送服务器失败,系统正在重连
+09-22 10:21:48:313 DEBUG [service.NotificationService]-[line:298] 主程序已同步推送状态
+09-22 10:23:20:253 DEBUG [service.NotificationService]-[line:266] 连接推送服务器成功
+09-22 10:23:21:236 DEBUG [service.NotificationService]-[line:298] 主程序已同步推送状态
+09-22 13:00:17:465 DEBUG [service.NotificationService]-[line:75] bcl debug PushServiceMqtt serverAddr: znj.bcl.com.cn:80
+09-22 13:00:17:482 DEBUG [service.NotificationService]-[line:310] bcl debug current version: 2.04.00.A3
+09-22 13:00:19:477 DEBUG [service.NotificationService]-[line:404] getAddrFromServer: tcp://182.92.118.251:1883
+09-22 13:00:19:478 DEBUG [service.NotificationService]-[line:410] 推送启用！
+09-22 13:00:20:333 DEBUG [service.NotificationService]-[line:266] 连接推送服务器成功
+09-22 13:00:20:935 DEBUG [service.NotificationService]-[line:298] 主程序已同步推送状态
+09-22 13:03:45:055 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00003_2.5_20170922130324822
+09-22 13:08:21:276 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00010_2.5_20170922130801475
+09-22 13:19:04:106 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00008_2.5_20170922131854447
+09-22 13:27:40:446 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00013_2.0_20170922132707577
+09-22 13:28:06:045 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00010_2.5_20170922132748879
+09-22 13:36:09:688 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00021_3.0_20170922133538443
+09-22 13:49:05:316 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00011_6.0_20170922134831950
+09-22 13:49:25:536 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00011_6.0_20170922134914739
+09-22 14:06:39:264 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00027_3.5_20170922140620529
+09-22 14:20:02:846 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00009_2.5_20170922141951481
+09-22 14:27:19:586 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170922142709602
+09-22 14:29:07:355 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00007_2.5_20170922142858312
+09-22 14:42:55:265 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170922144243557
+09-22 14:43:32:385 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00022_4.0_20170922144312768
+09-22 14:47:52:226 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00030_4.5_20170922144735142
+09-22 14:48:20:125 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00019_2.0_20170922144808680
+09-22 14:50:23:775 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00015_4.0_20170922145003727
+09-22 14:51:15:995 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00022_4.0_20170922145107226
+09-22 14:54:19:035 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00006_4.0_20170922145409965
+09-22 14:58:33:089 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00003_2.5_20170922145747676
+09-22 14:59:00:125 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00024_3.5_20170922145838711
+09-22 14:59:36:970 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00020_3.0_20170922145912939
+09-22 15:00:24:787 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00030_4.5_20170922145949671
+09-22 15:31:08:835 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00013_2.0_20170922153053724
+09-22 15:31:34:947 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00021_3.0_20170922153118676
+09-22 15:34:59:485 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00019_2.0_20170922153449599
+09-22 15:56:33:034 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00019_2.0_20170922155556975
+09-22 16:21:25:803 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00009_2.5_20170922162100032
+09-22 16:22:18:173 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00002_2.5_20170922162154930
+09-22 16:50:55:294 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00017_5.0_20170922165044401
+09-22 16:51:08:835 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00017_5.0_20170922165101294
+09-22 16:51:21:793 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170922165112695
+09-22 16:56:32:511 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00019_2.0_20170922165607541
+09-22 17:35:14:844 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00002_2.5_20170922173500667
+09-22 17:47:45:137 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00003_2.5_20170922174733472
+09-22 17:54:11:235 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00009_2.5_20170922175402249
+09-22 17:56:47:394 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00009_2.5_20170922175636221
+09-22 17:58:03:674 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00001_2.5_20170922175757838
+09-22 17:58:42:194 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00006_4.0_20170922175821506
+09-22 17:59:01:274 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00007_2.5_20170922175845950
+09-22 17:59:15:454 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00029_4.0_20170922175907598
+09-22 17:59:34:045 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00011_6.0_20170922175922903
+09-22 17:59:49:405 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00014_3.0_20170922175941589
+09-22 18:03:44:675 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00027_3.5_20170922180331391
+09-22 18:04:02:594 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170922180348104
+09-22 18:04:21:795 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00004_2.5_20170922180413400
+09-22 18:04:36:125 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00013_2.0_20170922180427326
+09-22 18:07:10:238 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00003_2.5_20170922180652870
+09-22 18:14:11:105 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00006_4.0_20170922181400964
+09-22 18:14:26:205 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00028_4.0_20170922181415434
+09-22 18:14:48:225 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00023_3.0_20170922181435387
+09-22 18:16:02:205 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00006_4.0_20170922181549463
+09-22 18:22:46:464 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00007_2.5_20170922182233815
+09-22 18:28:17:955 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00002_2.5_20170922182809545
+09-22 18:28:38:175 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00015_4.0_20170922182825856
+09-22 18:29:18:114 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00006_4.0_20170922182908180
+09-22 18:35:31:105 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00003_2.5_20170922183522319
+09-22 18:35:43:135 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00013_2.0_20170922183536516
+09-22 18:40:25:246 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00030_4.5_20170922184017304
+09-22 18:40:42:147 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00017_5.0_20170922184033606
+09-22 18:44:53:275 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00009_2.5_20170922184438367
+09-22 18:45:12:741 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00007_2.5_20170922184456802
+09-22 18:45:29:375 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00004_2.5_20170922184516520
+09-22 18:46:07:515 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00013_2.0_20170922184556573
+09-22 18:48:19:999 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00004_2.5_20170922184738668
+09-22 19:02:28:064 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170922190138197
+09-22 19:06:47:326 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00009_2.5_20170922190637571
+09-22 19:40:47:909 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00004_2.5_20170922194038402
+09-22 19:41:03:956 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00023_3.0_20170922194054702
+09-22 19:58:17:508 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00004_2.5_20170922195756598
+09-22 20:07:04:715 DEBUG [service.NotificationService]-[line:501] 无法连接至服务器 (32103) - java.net.ConnectException: failed to connect to /182.92.118.251 (port 1883) after 10000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(SourceFile:79)
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(SourceFile:650)
+	at java.lang.Thread.run(Thread.java:856)
+Caused by: java.net.ConnectException: failed to connect to /182.92.118.251 (port 1883) after 10000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:114)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
+	at java.net.Socket.connect(Socket.java:842)
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(SourceFile:70)
+	... 2 more
+Caused by: libcore.io.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:85)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:144)
+	at libcore.io.IoBridge.connect(IoBridge.java:112)
+	... 6 more
+
+09-22 20:07:04:719 DEBUG [service.NotificationService]-[line:280] 连接推送服务器失败,系统正在重连
+09-22 20:07:04:723 DEBUG [service.NotificationService]-[line:298] 主程序已同步推送状态
+09-22 20:08:37:968 DEBUG [service.NotificationService]-[line:266] 连接推送服务器成功
+09-22 20:08:38:951 DEBUG [service.NotificationService]-[line:298] 主程序已同步推送状态
+09-22 20:18:19:732 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00004_2.5_20170922201806874
+09-22 20:18:39:394 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00009_2.5_20170922201827703
+09-22 20:20:23:899 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00009_2.5_20170922202007715
+09-22 20:26:49:513 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00002_2.5_20170922202638915
+09-22 20:27:20:864 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00015_4.0_20170922202701411
+09-22 20:29:29:114 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00019_2.0_20170922202919242
+09-22 20:29:59:325 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00019_2.0_20170922202942247
+09-22 21:06:37:365 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00013_2.0_20170922210547452
+09-22 21:07:04:994 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00019_2.0_20170922210648456
+09-22 21:16:11:400 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00006_4.0_20170922211546491
+09-22 21:19:53:093 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00008_2.5_20170922211936886
+09-22 21:21:31:805 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00015_4.0_20170922212122954
+09-22 21:21:50:239 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00017_5.0_20170922212140146
+09-22 21:22:13:030 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00017_5.0_20170922212155041
+09-22 21:22:43:571 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00012_4.0_20170922212223851
+09-22 21:23:04:570 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00004_2.5_20170922212248719
+09-22 21:23:44:154 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00029_4.0_20170922212326448
+09-22 21:23:59:515 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00027_3.5_20170922212348936
+09-22 21:24:29:729 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00011_6.0_20170922212421434
+09-22 21:24:53:535 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00015_4.0_20170922212441707
+09-22 21:26:00:707 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00016_4.5_20170922212514634
+09-22 21:26:40:545 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00010_2.5_20170922212612246
+09-22 21:28:29:855 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00002_2.5_20170922212821330
+09-22 21:29:15:934 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00002_2.5_20170922212847040
+09-22 21:29:37:954 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00002_2.5_20170922212923810
+09-22 21:29:59:263 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170922212949927
+09-22 21:30:15:584 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170922213002726
+09-22 21:31:06:542 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00010_2.5_20170922213043931
+09-22 21:37:43:586 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170922213730494
+09-22 21:37:56:384 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00019_2.0_20170922213747360
+09-22 21:38:10:598 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170922213801124
+09-22 21:43:09:214 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00012_4.0_20170922214257149
+09-22 21:44:37:983 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00019_2.0_20170922214426350
+09-22 21:45:17:972 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00026_4.0_20170922214448328
+09-22 21:45:40:764 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00008_2.5_20170922214531556
+09-22 21:46:00:735 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00025_2.0_20170922214546730
+09-22 21:48:46:114 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00017_5.0_20170922214832227
+09-22 21:50:59:234 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00007_2.5_20170922215040030
+09-22 21:51:19:454 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00015_4.0_20170922215105991
+09-22 21:54:11:744 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00017_5.0_20170922215356786
+09-22 21:54:31:455 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00017_5.0_20170922215422073
+09-22 22:12:18:405 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00028_4.0_20170922221209308
+09-22 22:14:03:675 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00015_4.0_20170922221345489
+09-22 22:22:21:344 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00010_2.5_20170922222210726
+09-22 22:23:59:134 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00010_2.5_20170922222350329
+09-22 22:31:53:754 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00013_2.0_20170922223135767
+09-22 22:34:13:796 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00002_2.5_20170922223358593
+09-22 22:37:20:453 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170922223648966
+09-22 22:52:09:079 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00019_2.0_20170922225158690
+09-22 22:52:20:998 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170922225212377
+09-22 22:52:46:874 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00013_2.0_20170922225234170
+09-22 23:03:09:474 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00024_3.5_20170922230300019
+09-22 23:09:38:594 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00020_3.0_20170922230925373
+09-22 23:10:20:064 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00023_3.0_20170922231010186
+09-22 23:11:43:264 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00023_3.0_20170922231134862
+09-22 23:26:53:346 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170922232634315
+09-22 23:29:03:836 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170922232851573
+09-22 23:30:34:784 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00005_4.0_20170922233025880
+09-22 23:40:46:364 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00021_3.0_20170922234032712
+09-22 23:41:33:984 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00012_4.0_20170922234123141
+09-22 23:46:15:325 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00010_2.5_20170922234600999
+09-22 23:46:27:104 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00010_2.5_20170922234619467
+09-22 23:46:41:435 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00022_4.0_20170922234632288
+09-22 23:46:52:445 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00008_2.5_20170922234647258
+09-22 23:49:26:555 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00019_2.0_20170922234914260
+09-23 00:01:12:354 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00013_2.0_20170923000055500
+09-23 00:03:15:743 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00011_6.0_20170923000306308
+09-23 00:09:56:895 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00011_6.0_20170923000937168
+09-23 00:11:29:564 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00013_2.0_20170923001117223
+09-23 00:12:10:015 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00013_2.0_20170923001159978
+09-23 00:38:12:384 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00013_2.0_20170923003802631
+09-23 00:40:28:314 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170923004015469
+09-23 00:40:57:355 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00016_4.5_20170923004035471
+09-23 00:46:39:300 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00007_2.5_20170923004559654
+09-23 00:46:57:185 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00008_2.5_20170923004647272
+09-23 00:47:11:269 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00002_2.5_20170923004703161
+09-23 00:47:38:146 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00019_2.0_20170923004724759
+09-23 00:48:07:074 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00010_2.5_20170923004755547
+09-23 00:56:22:621 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00025_2.0_20170923005613302
+09-23 00:56:37:275 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00002_2.5_20170923005625893
+09-23 00:56:53:915 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00010_2.5_20170923005641314
+09-23 01:10:52:064 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00010_2.5_20170923011038423
+09-23 01:13:07:995 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00001_2.5_20170923011252031
+09-23 01:13:23:615 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00007_2.5_20170923011312205
+09-23 01:13:38:974 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00030_4.5_20170923011326928
+09-23 01:30:30:988 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00007_2.5_20170923013000418
+09-23 01:46:34:525 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00017_5.0_20170923014621247
+09-23 02:05:28:374 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00021_3.0_20170923020505575
+09-23 02:07:49:671 DEBUG [service.NotificationService]-[line:501] 无法连接至服务器 (32103) - java.net.ConnectException: failed to connect to /182.92.118.251 (port 1883) after 10000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(SourceFile:79)
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(SourceFile:650)
+	at java.lang.Thread.run(Thread.java:856)
+Caused by: java.net.ConnectException: failed to connect to /182.92.118.251 (port 1883) after 10000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:114)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
+	at java.net.Socket.connect(Socket.java:842)
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(SourceFile:70)
+	... 2 more
+Caused by: libcore.io.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:85)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:144)
+	at libcore.io.IoBridge.connect(IoBridge.java:112)
+	... 6 more
+
+09-23 02:07:49:679 DEBUG [service.NotificationService]-[line:280] 连接推送服务器失败,系统正在重连
+09-23 02:07:49:685 DEBUG [service.NotificationService]-[line:298] 主程序已同步推送状态
+09-23 02:09:51:514 DEBUG [service.NotificationService]-[line:266] 连接推送服务器成功
+09-23 02:09:51:760 DEBUG [service.NotificationService]-[line:298] 主程序已同步推送状态
+09-23 02:33:06:717 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00019_2.0_20170923023258505
+09-23 02:33:21:564 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00029_4.0_20170923023312620
+09-23 02:54:04:705 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00006_4.0_20170923025354894
+09-23 02:59:31:104 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00002_2.5_20170923025858961
+09-23 03:16:45:344 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00006_4.0_20170923031624853
+09-23 03:17:09:675 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00006_4.0_20170923031659658
+09-23 04:09:39:484 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00021_3.0_20170923040925695
+09-23 04:12:03:374 DEBUG [service.NotificationService]-[line:75] bcl debug PushServiceMqtt serverAddr: znj.bcl.com.cn:80
+09-23 04:12:03:385 DEBUG [service.NotificationService]-[line:310] bcl debug current version: 2.04.00.A3
+09-23 04:12:05:972 DEBUG [service.NotificationService]-[line:404] getAddrFromServer: tcp://182.92.118.251:1883
+09-23 04:12:05:976 DEBUG [service.NotificationService]-[line:410] 推送启用！
+09-23 04:12:06:985 DEBUG [service.NotificationService]-[line:266] 连接推送服务器成功
+09-23 04:12:07:186 DEBUG [service.NotificationService]-[line:298] 主程序已同步推送状态
+09-23 05:25:41:950 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00006_4.0_20170923052532664
+09-23 05:55:21:149 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170923055504787
+09-23 06:06:54:149 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00002_2.5_20170923060640222
+09-23 06:37:51:287 DEBUG [service.NotificationService]-[line:501] 无法连接至服务器 (32103) - java.net.ConnectException: failed to connect to /182.92.118.251 (port 1883) after 10000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(SourceFile:79)
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(SourceFile:650)
+	at java.lang.Thread.run(Thread.java:856)
+Caused by: java.net.ConnectException: failed to connect to /182.92.118.251 (port 1883) after 10000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:114)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
+	at java.net.Socket.connect(Socket.java:842)
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(SourceFile:70)
+	... 2 more
+Caused by: libcore.io.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:85)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:144)
+	at libcore.io.IoBridge.connect(IoBridge.java:112)
+	... 6 more
+
+09-23 06:37:51:292 DEBUG [service.NotificationService]-[line:280] 连接推送服务器失败,系统正在重连
+09-23 06:37:51:319 DEBUG [service.NotificationService]-[line:298] 主程序已同步推送状态
+09-23 06:40:08:264 DEBUG [service.NotificationService]-[line:266] 连接推送服务器成功
+09-23 06:40:09:373 DEBUG [service.NotificationService]-[line:298] 主程序已同步推送状态
+09-23 06:59:57:759 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00013_2.0_20170923065939855
+09-23 08:50:10:240 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00016_4.5_20170923085005368
+09-23 08:50:27:140 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00015_4.0_20170923085022976
+09-23 08:58:52:961 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00015_4.0_20170923085828282
+09-23 09:51:36:240 DEBUG [service.NotificationService]-[line:501] 无法连接至服务器 (32103) - java.net.ConnectException: failed to connect to /182.92.118.251 (port 1883) after 10000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(SourceFile:79)
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(SourceFile:650)
+	at java.lang.Thread.run(Thread.java:856)
+Caused by: java.net.ConnectException: failed to connect to /182.92.118.251 (port 1883) after 10000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:114)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
+	at java.net.Socket.connect(Socket.java:842)
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(SourceFile:70)
+	... 2 more
+Caused by: libcore.io.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:85)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:144)
+	at libcore.io.IoBridge.connect(IoBridge.java:112)
+	... 6 more
+
+09-23 09:51:36:250 DEBUG [service.NotificationService]-[line:280] 连接推送服务器失败,系统正在重连
+09-23 09:51:36:257 DEBUG [service.NotificationService]-[line:298] 主程序已同步推送状态
+09-23 09:53:38:167 DEBUG [service.NotificationService]-[line:266] 连接推送服务器成功
+09-23 09:53:38:405 DEBUG [service.NotificationService]-[line:298] 主程序已同步推送状态
+09-23 11:05:45:919 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00019_2.0_20170923110529449
+09-23 11:06:41:358 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00014_3.0_20170923110551825
+09-23 11:25:09:189 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00008_2.5_20170923112501972
+09-23 11:25:49:629 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00005_4.0_20170923112538243
+09-23 11:40:25:920 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00002_2.5_20170923114011860
+09-23 11:43:27:680 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00007_2.5_20170923114317742
+09-23 11:43:59:170 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00007_2.5_20170923114348012
+09-23 11:46:23:299 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00001_2.5_20170923114609872
+09-23 11:47:44:586 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00020_3.0_20170923114723512
+09-23 11:50:58:712 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00022_4.0_20170923115033792
+09-23 11:51:12:069 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00002_2.5_20170923115102626
+09-23 11:51:33:471 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00001_2.5_20170923115118787
+09-23 11:51:49:949 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00007_2.5_20170923115137762
+09-23 11:55:49:219 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00001_2.5_20170923115459846
+09-23 11:57:54:750 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00007_2.5_20170923115740294
+09-23 12:12:28:989 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170923121150466
+09-23 12:19:07:330 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00017_5.0_20170923121857641
+09-23 12:30:16:887 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00005_4.0_20170923122947220
+09-23 12:30:43:390 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00024_3.5_20170923123032755
+09-23 12:31:07:710 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00002_2.5_20170923123057886
+09-23 12:40:33:729 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00008_2.5_20170923124028063
+09-23 12:48:02:239 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00015_4.0_20170923124747305
+09-23 12:50:09:286 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00007_2.5_20170923124955827
+09-23 12:52:08:664 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00007_2.5_20170923125121686
+09-23 12:52:37:439 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00002_2.5_20170923125222933
+09-23 12:54:23:681 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00011_6.0_20170923125404979
+09-23 12:56:05:209 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00024_3.5_20170923125535120
+09-23 12:56:29:380 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00028_4.0_20170923125611489
+09-23 12:57:50:789 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00015_4.0_20170923125736966
+09-23 13:05:28:511 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00020_3.0_20170923130512690
+09-23 13:09:53:990 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00002_2.5_20170923130945321
+09-23 13:12:41:410 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170923131230880
+09-23 13:22:05:628 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00008_2.5_20170923132144527
+09-23 13:35:50:470 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00020_3.0_20170923133540214
+09-23 13:37:26:721 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00015_4.0_20170923133715093
+09-23 13:47:37:280 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00003_2.5_20170923134724200
+09-23 13:48:02:109 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00004_2.5_20170923134749657
+09-23 13:53:30:559 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00014_3.0_20170923135314089
+09-23 14:03:25:760 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00015_4.0_20170923140314091
+09-23 15:03:35:870 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00019_2.0_20170923150324095
+09-23 15:32:46:151 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00017_5.0_20170923153235553
+09-23 15:33:02:270 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00003_2.5_20170923153252786
+09-23 15:33:30:409 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00010_2.5_20170923153307431
+09-23 15:33:45:790 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00014_3.0_20170923153334712
+09-23 15:34:03:709 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00026_4.0_20170923153352836
+09-23 15:34:20:100 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00026_4.0_20170923153410508
+09-23 15:37:50:020 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00020_3.0_20170923153730676
+09-23 15:52:06:589 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00002_2.5_20170923155156300
+09-23 15:59:44:069 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00009_2.5_20170923155932474
+09-23 16:23:35:359 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00005_4.0_20170923162318747
+09-23 17:18:29:060 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00020_3.0_20170923171817352
+09-23 17:27:23:530 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00008_2.5_20170923172708123
+09-23 17:27:38:297 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00002_2.5_20170923172729421
+09-23 17:30:21:245 DEBUG [service.NotificationService]-[line:501] 无法连接至服务器 (32103) - java.net.ConnectException: failed to connect to /182.92.118.251 (port 1883) after 10000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(SourceFile:79)
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(SourceFile:650)
+	at java.lang.Thread.run(Thread.java:856)
+Caused by: java.net.ConnectException: failed to connect to /182.92.118.251 (port 1883) after 10000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:114)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
+	at java.net.Socket.connect(Socket.java:842)
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(SourceFile:70)
+	... 2 more
+Caused by: libcore.io.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:85)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:144)
+	at libcore.io.IoBridge.connect(IoBridge.java:112)
+	... 6 more
+
+09-23 17:30:21:253 DEBUG [service.NotificationService]-[line:280] 连接推送服务器失败,系统正在重连
+09-23 17:30:21:259 DEBUG [service.NotificationService]-[line:298] 主程序已同步推送状态
+09-23 17:32:08:138 DEBUG [service.NotificationService]-[line:266] 连接推送服务器成功
+09-23 17:32:09:103 DEBUG [service.NotificationService]-[line:298] 主程序已同步推送状态
+09-23 17:36:41:410 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00024_3.5_20170923173621665
+09-23 17:38:04:870 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00028_4.0_20170923173757639
+09-23 17:43:12:579 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00009_2.5_20170923174305648
+09-23 17:44:31:097 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00010_2.5_20170923174415198
+09-23 17:45:11:110 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00024_3.5_20170923174457442
+09-23 17:47:29:603 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00022_4.0_20170923174719700
+09-23 17:47:51:512 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00013_2.0_20170923174737999
+09-23 17:53:19:039 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00020_3.0_20170923175310176
+09-23 17:54:46:342 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00006_4.0_20170923175437812
+09-23 18:00:49:200 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00003_2.5_20170923180032326
+09-23 18:18:32:259 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00025_2.0_20170923181819551
+09-23 18:18:47:758 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00025_2.0_20170923181836472
+09-23 18:25:08:551 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00012_4.0_20170923182449711
+09-23 18:26:38:909 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00001_2.5_20170923182622080
+09-23 18:48:24:769 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00022_4.0_20170923184805612
+09-23 19:00:38:980 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00018_5.0_20170923190023632
+09-23 19:00:53:569 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00025_2.0_20170923190044151
+09-23 19:21:46:429 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00021_3.0_20170923192131884
+09-23 19:22:38:659 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170923192224673
+09-23 19:29:15:199 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00003_2.5_20170923192858980
+09-23 19:37:41:310 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00009_2.5_20170923193727523
+09-23 19:38:06:211 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00004_2.5_20170923193751696
+09-23 19:59:03:982 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00019_2.0_20170923195837972
+09-23 20:04:43:069 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00007_2.5_20170923200431729
+09-23 20:08:13:759 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00001_2.5_20170923200803867
+09-23 20:13:05:599 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00015_4.0_20170923201254831
+09-23 20:17:47:709 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00013_2.0_20170923201734331
+09-23 20:21:23:781 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00008_2.5_20170923202111190
+09-23 20:21:43:749 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00007_2.5_20170923202134749
+09-23 20:39:37:919 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00011_6.0_20170923203929191
+09-23 20:47:22:819 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00026_4.0_20170923204707839
+09-23 21:08:56:389 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00023_3.0_20170923210844900
+09-23 21:09:09:949 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00011_6.0_20170923210900029
+09-23 21:09:41:198 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00027_3.5_20170923210915830
+09-23 21:09:57:829 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00008_2.5_20170923210944792
+09-23 21:10:16:308 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00017_5.0_20170923211005401
+09-23 21:11:40:740 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00026_4.0_20170923211111789
+09-23 21:11:54:560 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00005_4.0_20170923211146712
+09-23 21:12:14:272 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170923211202839
+09-23 21:12:33:991 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00027_3.5_20170923211225016
+09-23 21:15:10:659 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00014_3.0_20170923211457919
+09-23 21:20:31:429 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00002_2.5_20170923212022462
+09-23 21:22:13:061 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00017_5.0_20170923212203381
+09-23 21:33:01:350 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00025_2.0_20170923213253319
+09-23 21:37:31:585 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00002_2.5_20170923213711709
+09-23 21:45:36:948 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170923214526622
+09-23 21:45:55:389 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00004_2.5_20170923214540615
+09-23 22:24:31:169 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00005_4.0_20170923222417148
+09-23 22:32:23:489 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00013_2.0_20170923223209488
+09-23 22:34:27:450 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00001_2.5_20170923223402666
+09-23 22:57:51:809 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00019_2.0_20170923225740834
+09-23 23:05:36:901 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00004_2.5_20170923230514120
+09-23 23:07:19:619 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00029_4.0_20170923230701190
+09-23 23:10:58:736 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00015_4.0_20170923231031469
+09-23 23:13:31:841 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00020_3.0_20170923231322337
+09-23 23:14:16:129 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00016_4.5_20170923231401861
+09-23 23:18:39:809 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00015_4.0_20170923231822429
+09-23 23:22:16:899 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00012_4.0_20170923232205745
+09-23 23:27:39:199 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00005_4.0_20170923232727976
+09-23 23:29:48:237 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00027_3.5_20170923232902678
+09-23 23:30:37:119 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00014_3.0_20170923233024093
+09-23 23:44:18:880 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170923234410584
+09-23 23:48:07:999 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170923234755616
+09-23 23:50:08:319 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00030_4.5_20170923234954572
+09-23 23:51:58:399 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00013_2.0_20170923235143768
+09-23 23:56:57:919 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00020_3.0_20170923235645923
+09-23 23:58:32:639 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00003_2.5_20170923235823139
+09-24 00:02:45:828 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00011_6.0_20170924000235383
+09-24 00:07:25:119 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00024_3.5_20170924000713739
+09-24 00:17:04:189 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00002_2.5_20170924001654213
+09-24 00:17:22:982 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00029_4.0_20170924001713243
+09-24 00:23:33:059 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00015_4.0_20170924002321209
+09-24 00:30:49:789 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00019_2.0_20170924003038556
+09-24 00:38:13:342 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00015_4.0_20170924003728381
+09-24 00:47:15:389 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00021_3.0_20170924004706857
+09-24 00:58:04:349 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170924005752838
+09-24 01:10:07:299 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00007_2.5_20170924010954145
+09-24 01:11:29:988 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00003_2.5_20170924011122139
+09-24 01:35:22:820 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00019_2.0_20170924013513792
+09-24 01:51:36:129 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00011_6.0_20170924015129422
+09-24 01:56:52:799 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00006_4.0_20170924015642269
+09-24 02:35:23:715 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00015_4.0_20170924023517291
+09-24 02:36:54:339 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00007_2.5_20170924023639684
+09-24 02:49:06:240 DEBUG [service.NotificationService]-[line:501] 无法连接至服务器 (32103) - java.net.ConnectException: failed to connect to /182.92.118.251 (port 1883) after 10000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(SourceFile:79)
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(SourceFile:650)
+	at java.lang.Thread.run(Thread.java:856)
+Caused by: java.net.ConnectException: failed to connect to /182.92.118.251 (port 1883) after 10000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:114)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
+	at java.net.Socket.connect(Socket.java:842)
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(SourceFile:70)
+	... 2 more
+Caused by: libcore.io.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:85)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:144)
+	at libcore.io.IoBridge.connect(IoBridge.java:112)
+	... 6 more
+
+09-24 02:49:06:248 DEBUG [service.NotificationService]-[line:280] 连接推送服务器失败,系统正在重连
+09-24 02:49:06:255 DEBUG [service.NotificationService]-[line:298] 主程序已同步推送状态
+09-24 02:50:36:586 DEBUG [service.NotificationService]-[line:266] 连接推送服务器成功
+09-24 02:50:36:802 DEBUG [service.NotificationService]-[line:298] 主程序已同步推送状态
+09-24 04:48:27:776 DEBUG [service.NotificationService]-[line:75] bcl debug PushServiceMqtt serverAddr: znj.bcl.com.cn:80
+09-24 04:48:27:785 DEBUG [service.NotificationService]-[line:310] bcl debug current version: 2.04.00.A3
+09-24 04:48:30:593 DEBUG [service.NotificationService]-[line:404] getAddrFromServer: tcp://182.92.118.251:1883
+09-24 04:48:30:595 DEBUG [service.NotificationService]-[line:410] 推送启用！
+09-24 04:48:31:116 DEBUG [service.NotificationService]-[line:266] 连接推送服务器成功
+09-24 04:48:51:344 DEBUG [service.NotificationService]-[line:298] 主程序已同步推送状态
+09-24 07:11:06:878 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00017_5.0_20170924071048842
+09-24 07:12:53:378 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00019_2.0_20170924071234141
+09-24 08:33:14:103 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00007_2.5_20170924083253330
+09-24 08:33:50:207 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00015_4.0_20170924083341816
+09-24 09:33:30:377 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00006_4.0_20170924093312325
+09-24 10:35:28:517 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00030_4.5_20170924103509068
+09-24 11:04:11:408 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00026_4.0_20170924110402708
+09-24 11:04:23:168 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00012_4.0_20170924110415624
+09-24 11:06:38:849 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00024_3.5_20170924110627480
+09-24 11:06:54:719 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00023_3.0_20170924110644394
+09-24 11:13:42:528 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00021_3.0_20170924111332678
+09-24 11:22:11:457 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00026_4.0_20170924112156019
+09-24 11:22:28:358 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00002_2.5_20170924112216087
+09-24 11:26:13:117 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00014_3.0_20170924112553745
+09-24 11:30:59:078 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00011_6.0_20170924113031739
+09-24 11:46:29:377 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00001_2.5_20170924114618084
+09-24 11:55:32:358 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00009_2.5_20170924115520430
+09-24 12:00:42:877 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00023_3.0_20170924120033072
+09-24 12:03:46:449 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00011_6.0_20170924120324784
+09-24 12:05:27:297 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00024_3.5_20170924120510355
+09-24 12:12:32:069 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00003_2.5_20170924121208555
+09-24 12:33:00:951 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00002_2.5_20170924123238932
+09-24 12:35:41:227 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170924123524816
+09-24 12:38:07:666 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00029_4.0_20170924123748008
+09-24 12:42:57:622 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00002_2.5_20170924124234261
+09-24 12:43:26:207 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00004_2.5_20170924124320395
+09-24 12:48:31:618 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00002_2.5_20170924124758861
+09-24 12:50:52:418 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00002_2.5_20170924125034642
+09-24 12:51:29:277 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170924125111142
+09-24 13:01:36:518 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00013_2.0_20170924130128768
+09-24 13:03:11:851 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00019_2.0_20170924130244439
+09-24 13:03:29:917 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00019_2.0_20170924130317368
+09-24 13:10:14:034 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00003_2.5_20170924130957824
+09-24 13:10:29:248 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00024_3.5_20170924131017760
+09-24 13:40:21:757 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00026_4.0_20170924134005779
+09-24 13:40:48:128 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00007_2.5_20170924134033987
+09-24 13:42:54:893 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00009_2.5_20170924134239561
+09-24 13:44:15:997 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00027_3.5_20170924134358757
+09-24 13:46:25:419 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00028_4.0_20170924134549525
+09-24 13:46:43:457 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00005_4.0_20170924134634450
+09-24 13:51:44:517 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00008_2.5_20170924135131713
+09-24 14:06:18:871 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00020_3.0_20170924140604650
+09-24 14:07:45:929 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00009_2.5_20170924140726343
+09-24 14:18:32:957 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00003_2.5_20170924141823253
+09-24 14:19:07:778 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00017_5.0_20170924141838849
+09-24 14:49:16:157 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00019_2.0_20170924144856806
+09-24 14:50:28:098 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00020_3.0_20170924145016086
+09-24 14:50:45:758 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00001_2.5_20170924145033615
+09-24 15:10:37:698 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00005_4.0_20170924151021998
+09-24 15:10:54:124 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00012_4.0_20170924151044902
+09-24 15:11:12:517 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00006_4.0_20170924151106864
+09-24 15:36:55:167 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00011_6.0_20170924153641431
+09-24 15:56:49:407 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00025_2.0_20170924155637824
+09-24 16:06:10:817 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00009_2.5_20170924160602477
+09-24 16:34:00:821 DEBUG [service.NotificationService]-[line:501] 无法连接至服务器 (32103) - java.net.ConnectException: failed to connect to /182.92.118.251 (port 1883) after 10000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(SourceFile:79)
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(SourceFile:650)
+	at java.lang.Thread.run(Thread.java:856)
+Caused by: java.net.ConnectException: failed to connect to /182.92.118.251 (port 1883) after 10000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:114)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
+	at java.net.Socket.connect(Socket.java:842)
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(SourceFile:70)
+	... 2 more
+Caused by: libcore.io.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:85)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:144)
+	at libcore.io.IoBridge.connect(IoBridge.java:112)
+	... 6 more
+
+09-24 16:34:00:827 DEBUG [service.NotificationService]-[line:280] 连接推送服务器失败,系统正在重连
+09-24 16:34:00:838 DEBUG [service.NotificationService]-[line:298] 主程序已同步推送状态
+09-24 16:36:05:731 DEBUG [service.NotificationService]-[line:266] 连接推送服务器成功
+09-24 16:36:06:635 DEBUG [service.NotificationService]-[line:298] 主程序已同步推送状态
+09-24 16:51:31:327 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00027_3.5_20170924165115747
+09-24 17:38:09:408 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00015_4.0_20170924173759414
+09-24 17:43:12:488 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00006_4.0_20170924174219291
+09-24 17:43:27:617 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00001_2.5_20170924174317157
+09-24 17:43:43:491 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00018_5.0_20170924174333894
+09-24 17:49:43:841 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00009_2.5_20170924174917459
+09-24 17:54:39:877 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00021_3.0_20170924175422892
+09-24 18:02:07:798 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00009_2.5_20170924180142070
+09-24 18:04:05:377 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00030_4.5_20170924180353261
+09-24 18:05:51:236 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00007_2.5_20170924180522400
+09-24 18:15:09:737 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00030_4.5_20170924181459625
+09-24 18:17:04:127 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00004_2.5_20170924181650098
+09-24 18:24:45:958 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00007_2.5_20170924182427550
+09-24 18:30:50:052 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00009_2.5_20170924183024647
+09-24 18:34:16:577 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00013_2.0_20170924183355094
+09-24 18:34:35:008 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00028_4.0_20170924183425615
+09-24 18:36:15:698 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00030_4.5_20170924183605698
+09-24 18:36:32:396 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00008_2.5_20170924183622384
+09-24 18:36:48:387 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00007_2.5_20170924183637915
+09-24 18:38:59:967 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00005_4.0_20170924183850374
+09-24 18:41:28:707 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00008_2.5_20170924184100609
+09-24 18:42:56:767 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00002_2.5_20170924184243848
+09-24 18:48:34:437 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00017_5.0_20170924184817844
+09-24 18:49:07:717 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00002_2.5_20170924184900041
+09-24 18:51:26:991 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00019_2.0_20170924185117613
+09-24 18:53:36:257 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00007_2.5_20170924185326505
+09-24 19:03:07:138 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00013_2.0_20170924190254079
+09-24 19:17:01:697 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00005_4.0_20170924191651594
+09-24 19:27:40:417 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00003_2.5_20170924192730798
+09-24 19:33:26:017 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00008_2.5_20170924193311889
+09-24 19:34:15:941 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00025_2.0_20170924193342792
+09-24 19:40:33:798 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00005_4.0_20170924194022987
+09-24 19:43:12:517 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00009_2.5_20170924194252856
+09-24 19:51:23:269 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00026_4.0_20170924195107604
+09-24 19:58:41:797 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00009_2.5_20170924195825544
+09-24 20:08:47:487 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00013_2.0_20170924200830789
+09-24 20:17:06:439 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00008_2.5_20170924201656861
+09-24 20:21:28:164 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170924202119034
+09-24 20:32:11:397 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00023_3.0_20170924203158080
+09-24 20:37:57:528 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00008_2.5_20170924203722571
+09-24 20:53:43:685 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00004_2.5_20170924205334875
+09-24 20:54:35:648 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00004_2.5_20170924205424758
+09-24 20:54:50:237 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00022_4.0_20170924205443463
+09-24 20:55:31:718 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00003_2.5_20170924205517754
+09-24 21:02:21:317 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00007_2.5_20170924210202826
+09-24 21:06:42:437 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00010_2.5_20170924210632820
+09-24 21:11:10:334 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00026_4.0_20170924211035089
+09-24 21:11:27:361 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00015_4.0_20170924211117050
+09-24 21:11:40:927 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00007_2.5_20170924211133277
+09-24 21:12:01:313 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00009_2.5_20170924211147676
+09-24 21:12:25:988 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00021_3.0_20170924211214494
+09-24 21:12:56:447 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00010_2.5_20170924211237857
+09-24 21:13:21:537 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00003_2.5_20170924211308681
+09-24 21:13:39:041 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00028_4.0_20170924211327063
+09-24 21:13:53:027 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00026_4.0_20170924211344580
+09-24 21:17:32:161 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00020_3.0_20170924211721130
+09-24 21:17:55:478 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00016_4.5_20170924211740468
+09-24 21:18:11:587 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00020_3.0_20170924211800123
+09-24 21:18:30:757 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00006_4.0_20170924211818612
+09-24 21:18:56:127 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00010_2.5_20170924211840756
+09-24 21:19:21:876 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170924211910546
+09-24 21:19:39:907 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00026_4.0_20170924211930639
+09-24 21:39:12:387 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00023_3.0_20170924213857713
+09-24 21:41:17:058 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00008_2.5_20170924214109023
+09-24 21:53:09:760 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00008_2.5_20170924215302578
+09-24 21:53:23:587 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00006_4.0_20170924215313499
+09-24 21:56:54:019 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00010_2.5_20170924215647127
+09-24 21:57:11:938 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00008_2.5_20170924215702330
+09-24 21:57:42:397 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00003_2.5_20170924215723834
+09-24 21:58:49:477 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00002_2.5_20170924215831954
+09-24 22:00:45:957 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00011_6.0_20170924220025745
+09-24 22:01:02:337 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00013_2.0_20170924220055031
+09-24 22:06:45:377 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00003_2.5_20170924220631505
+09-24 22:07:05:348 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00009_2.5_20170924220654772
+09-24 22:15:04:068 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00001_2.5_20170924221456942
+09-24 22:23:44:520 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00008_2.5_20170924222327505
+09-24 22:25:19:748 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00002_2.5_20170924222510878
+09-24 22:27:24:231 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00007_2.5_20170924222657621
+09-24 22:27:57:746 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00019_2.0_20170924222736483
+09-24 22:30:44:687 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00003_2.5_20170924223022464
+09-24 22:55:57:833 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00018_5.0_20170924225540099
+09-24 23:01:54:947 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00005_4.0_20170924230137369
+09-24 23:03:16:586 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00015_4.0_20170924230302892
+09-24 23:04:23:427 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170924230413373
+09-24 23:06:55:487 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00009_2.5_20170924230634574
+09-24 23:19:33:989 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00010_2.5_20170924231923606
+09-24 23:24:07:134 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00005_4.0_20170924232333077
+09-24 23:24:37:377 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00001_2.5_20170924232425453
+09-24 23:25:00:417 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00001_2.5_20170924232453275
+09-24 23:25:55:967 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00016_4.5_20170924232545460
+09-24 23:30:53:437 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00005_4.0_20170924233039415
+09-24 23:37:52:608 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00003_2.5_20170924233718499
+09-24 23:38:55:492 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00003_2.5_20170924233800187
+09-25 00:27:01:086 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00009_2.5_20170925002606754
+09-25 00:55:25:267 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00021_3.0_20170925005519302
+09-25 01:32:56:578 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00030_4.5_20170925013241688
+09-25 02:34:57:278 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00013_2.0_20170925023441364
+09-25 03:04:46:467 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00020_3.0_20170925030434974
+09-25 03:45:18:845 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00020_3.0_20170925034456196
+09-25 03:46:04:797 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00025_2.0_20170925034552742
+09-25 05:16:25:002 DEBUG [service.NotificationService]-[line:75] bcl debug PushServiceMqtt serverAddr: znj.bcl.com.cn:80
+09-25 05:16:25:009 DEBUG [service.NotificationService]-[line:310] bcl debug current version: 2.04.00.A3
+09-25 05:16:26:633 DEBUG [service.NotificationService]-[line:404] getAddrFromServer: tcp://182.92.118.251:1883
+09-25 05:16:26:634 DEBUG [service.NotificationService]-[line:410] 推送启用！
+09-25 05:16:27:222 DEBUG [service.NotificationService]-[line:266] 连接推送服务器成功
+09-25 05:16:27:700 DEBUG [service.NotificationService]-[line:298] 主程序已同步推送状态
+09-25 05:59:17:346 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00011_6.0_20170925055903697
+09-25 07:26:29:218 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00015_4.0_20170925072618084
+09-25 07:52:49:505 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,4,40201406261424078896122498691067040027_00019_2.0_20170925075235766
+09-25 08:49:33:873 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: pay; mqttMessage: OK,3,40201406261424078896122498691067040027_00015_4.0_20170925084911053
+09-25 10:10:01:186 DEBUG [service.NotificationService]-[line:125] 接收到消息, topicName: upload; mqttMessage: Log,/mnt/sdcard/,0,0

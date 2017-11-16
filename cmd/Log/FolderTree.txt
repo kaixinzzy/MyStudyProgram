@@ -1,0 +1,162 @@
++--0/
+|  +--Automat7inch.txt.2
+|  +--temp/
+|  |  +--Log/
+|  +--Music/
+|  +--DCIM/
+|  +--Download/
+|  +--Notifications/
+|  +--Pictures/
+|  +--Automat7inch.txt.1
+|  +--marquee/
+|  |  +--contacts.txt
+|  +--baidu/
+|  |  +--tempdata/
+|  |  |  +--conlts.dat
+|  |  |  +--ls.db
+|  |  |  +--ls.db-journal
+|  |  |  +--lcvif.dat
+|  +--msc/
+|  |  +--29634160cdc95c33881c3b05a7d02a61/
+|  |  |  +--u.data
+|  +--Android/
+|  |  +--obb/
+|  |  +--data/
+|  |  |  +--com.estrongs.android.pop/
+|  |  |  |  +--.apps/
+|  |  |  |  +--.albumart/
+|  |  |  |  +--.thumbnails/
+|  |  |  |  +--cache/
+|  |  |  |  |  +--visit_history
+|  |  |  |  |  +--visit_history-journal
+|  +--Version/
+|  |  +--automatMaintenance.apk
+|  |  +--bootanimation.zip
+|  |  +--automatGuide.apk
+|  |  +--liblocSDK5.so
+|  |  +--automatCore.apk
+|  |  +--automatbreakdown.apk
+|  |  +--USBBroadcast.apk
+|  +--guideService.txt.1
+|  +--automatMaintenance.txt.1
+|  +--automat.txt
+|  +--Automat7inch.txt.4
+|  +--automatMaintenance.txt.5
+|  +--automatMaintenance.txt.4
+|  +--PicAD/
+|  |  +--3.jpg
+|  |  +--1.jpg
+|  |  +--2.jpg
+|  +--Movies/
+|  |  +--nasa.mp4
+|  +--Ringtones/
+|  +--USBBroadcast.txt
+|  +--Podcasts/
+|  +--automatMaintenance.txt.3
+|  +--Maintenance/
+|  |  +--dex/
+|  +--SNNO/
+|  |  +--SN.txt
+|  +--automatMaintenance.txt
+|  +--guideService.txt
+|  +--amap/
+|  |  +--openamaplocationsdk/
+|  |  |  +--alsn.db-journal
+|  |  |  +--alsn.db
+|  +--Alarms/
+|  +--backups/
+|  |  +--apps/
+|  +--HomeActivity.txt
+|  +--Log/
+|  |  +--AutomatDownload.txt
+|  |  +--AutomatCore.txt
+|  |  +--AutomatCore.txt.1
+|  |  +--AutomatUpdate.txt
+|  |  +--AutomatGuide.txt
+|  |  +--AutomatMaintenance.txt
+|  |  +--AutomatDaemon.txt
+|  |  +--AutomatPushService.txt
+|  +--Automat7inch.txt.5
+|  +--automatMaintenance.txt.2
+|  +--Automat7inch.txt
+|  +--.estrongs/
+|  |  +--theme/
+|  |  |  +--com.estrongs.android.pop/
+|  |  +--bookmark1/
+|  |  |  +--天气
+|  |  |  +--新闻
+|  +--Automat7inch.txt.3
+|  +--snnum.txt
+
+
++--app/
+|  +--ApplicationsProvider.apk
+|  +--automatGuide.apk
+|  +--automatCore.apk
+|  +--automatMaintenance.apk
+|  +--USBBroadcast.apk
+|  +--BackupRestoreConfirmation.apk
+|  +--BasicDreams.apk
+|  +--Bluetooth.apk
+|  +--Browser.apk
+|  +--BSPTestTool.apk
+|  +--CactusPlayer.apk
+|  +--Calculator.apk
+|  +--Calendar.apk
+|  +--CalendarProvider.apk
+|  +--CertInstaller.apk
+|  +--Contacts.apk
+|  +--ContactsProvider.apk
+|  +--CubeLiveWallpapers.apk
+|  +--DefaultContainerService.apk
+|  +--DeskClock.apk
+|  +--Development.apk
+|  +--DownloadProvider.apk
+|  +--DownloadProviderUi.apk
+|  +--DrmProvider.apk
+|  +--Email.apk
+|  +--ESFileExplorer_130.apk
+|  +--Exchange2.apk
+|  +--FSLOta.apk
+|  +--FusedLocation.apk
+|  +--Gallery2.apk
+|  +--HTMLViewer.apk
+|  +--InputDevices.apk
+|  +--KeyChain.apk
+|  +--LatinIME.apk
+|  +--Launcher2.apk
+|  +--LegacyCamera.apk
+|  +--LiveWallpapers.apk
+|  +--LiveWallpapersPicker.apk
+|  +--MACHDMI-sys.apk
+|  +--MagicSmokeWallpapers.apk
+|  +--MediaProvider.apk
+|  +--Mms.apk
+|  +--Music.apk
+|  +--MusicFX.apk
+|  +--Notepad-1.4.0.7.apk
+|  +--PackageInstaller.apk
+|  +--Phone.apk
+|  +--PicoTts.apk
+|  +--PinyinIME.apk
+|  +--Provision.apk
+|  +--QuickSearchBox.apk
+|  +--READSN.apk
+|  +--ScreenRotation-sys.apk
+|  +--Settings.apk
+|  +--SettingsProvider.apk
+|  +--SharedStorageBackup.apk
+|  +--SoundRecorder.apk
+|  +--SpeechRecorder.apk
+|  +--SystemUI.apk
+|  +--TelephonyProvider.apk
+|  +--Term.apk
+|  +--UserDictionaryProvider.apk
+|  +--VideoEditor.apk
+|  +--VideoShow.apk
+|  +--VisualizationWallpapers.apk
+|  +--VpnDialogs.apk
+|  +--automatBreakdown.apk
+|  +--automatDownload.apk
+|  +--automatDaemonService.apk
+|  +--automatPushService.apk

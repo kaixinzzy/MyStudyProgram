@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+//首先需要在Project的build.gradle中配置：apply from: 'config.gradle'  用来引入Project下的config.gradle文件
+def config = rootProject.ext.android   //配置
+def lib = rootProject.ext.dependencies //依赖
+def sou = rootProject.ext.sourceSets   //源文件目录设置
+def others = rootProject.ext.others    //其他常用配置
+
+android {
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+
+    }
+    sourceSets {
+        main {
+            manifest.srcFile sou.manifest_srcFile
+            java.srcDirs = [sou.java_srcDirs]
+            resources.srcDirs = [sou.resources_srcDirs]
+            aidl.srcDirs = [sou.aidl_srcDirs]
+            renderscript.srcDirs = [sou.renderscript_srcDirs]
+            res.srcDirs = [sou.res_srcDirs]
+            assets.srcDirs = [sou.assets_srcDirs]
+        }
+    }
+    lintOptions {
+        abortOnError others.abortOnError
+        disable others.disable
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile lib.multi
+}

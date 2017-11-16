@@ -1,0 +1,31 @@
+09-22 03:11:00:904 DEBUG [service.DownloadService]-[line:78] bcl debug DownloadService serverAddr: znj.bcl.com.cn:80
+09-22 03:11:00:908 DEBUG [service.DownloadService]-[line:79] 支持: 断电续传; zip包更新程序
+09-22 03:11:03:251 DEBUG [service.DownloadService]-[line:2433] onDestroy
+09-22 13:00:17:467 DEBUG [service.DownloadService]-[line:78] bcl debug DownloadService serverAddr: znj.bcl.com.cn:80
+09-22 13:00:17:471 DEBUG [service.DownloadService]-[line:79] 支持: 断电续传; zip包更新程序
+09-22 13:00:19:838 DEBUG [service.DownloadService]-[line:455] 检测到更新
+09-22 13:00:19:843 DEBUG [service.DownloadService]-[line:500] 配置文件更新
+09-22 13:00:19:850 DEBUG [service.DownloadService]-[line:973] configUpdate :sn = 40201406261424078896122498691067040027 code = ZNJPr7d1Gy7170913173553809_170913173553 taskId = TASKID addr = 182.92.118.251:80 type = 0
+09-22 13:00:19:852 DEBUG [common.CommonWebServiceAPI]-[line:138] CommonWebServiceAPI getDocumentFromWebService addr = 182.92.118.251:80 nameSpace = http://webservice.cinemamanagesys.bcl.com.cn URL = DownloadFile.ws methodName = getdownloadInfo type = 4
+09-22 13:00:19:857 DEBUG [common.CommonWebServiceAPI]-[line:159] CommonWebServiceAPI getDocumentFromWebService sn =40201406261424078896122498691067040027id =  ZNJPr7d1Gy7170913173553809_170913173553 taskId =TASKID
+09-22 13:00:20:719 DEBUG [common.CommonWebServiceAPI]-[line:237] CommonWebServiceAPI getDocumentFromWebService return <?xml version="1.0" encoding="UTF-8"?><data version="1.0"><result>0</result><message>success</message><number>ZNJPr7d1Gy7170913173553809_170913173553</number><md50>509eb7a8d1788ec2e1c2279a3fa6cdd1</md50><size>1</size><file_time_end0/><file_time_begin0/><type>04</type><filename0>CONFIG_CORP_DEFAULT_NAME</filename0><downloadpath0>/download/configure/广西南宁天达智能电子科技有限公司/CONFIG_CORP_DEFAULT_NAME.xml</downloadpath0></data>
+09-22 13:00:20:732 DEBUG [service.DownloadService]-[line:1006] configDLXmlAnalyze type == 0
+09-22 13:00:20:739 DEBUG [service.DownloadService]-[line:1025] before ConfigInfo download
+09-22 13:00:20:742 DEBUG [service.DownloadService]-[line:1036] folder Maintenance/ConfigInfo is not exists or not a directory
+09-22 13:00:20:751 DEBUG [service.DownloadService]-[line:1680] resumeDownLoadFile() start; storePath = /storage/emulated/0/Maintenance/ConfigInfo; url = /download/configure/广西南宁天达智能电子科技有限公司/CONFIG_CORP_DEFAULT_NAME.xml;
+filename = CONFIG_CORP_DEFAULT_NAME; type = 4; addr = 182.92.118.251:80; code = ZNJPr7d1Gy7170913173553809_170913173553; taskId = TASKID
+
+09-22 13:00:27:212 DEBUG [common.CommonResumeDownload]-[line:283] file CONFIG_CORP_DEFAULT_NAME.tmp rename to CONFIG_CORP_DEFAULT_NAME success
+09-22 13:00:27:221 DEBUG [service.DownloadService]-[line:2168] CONFIG_CORP_DEFAULT_NAME -> md5 server:local |*509eb7a8d1788ec2e1c2279a3fa6cdd1*| : |*509eb7a8d1788ec2e1c2279a3fa6cdd1*|
+09-22 13:00:27:224 DEBUG [service.DownloadService]-[line:1832] saveConfigInfo
+09-22 13:00:27:944 DEBUG [service.DownloadService]-[line:1993] code ZNJPr7d1Gy7170913173553809_170913173553 download completely.
+09-22 13:00:27:950 DEBUG [service.DownloadService]-[line:2433] onDestroy
+09-23 04:12:03:333 DEBUG [service.DownloadService]-[line:78] bcl debug DownloadService serverAddr: znj.bcl.com.cn:80
+09-23 04:12:03:343 DEBUG [service.DownloadService]-[line:79] 支持: 断电续传; zip包更新程序
+09-23 04:12:05:929 DEBUG [service.DownloadService]-[line:2433] onDestroy
+09-24 04:48:27:781 DEBUG [service.DownloadService]-[line:78] bcl debug DownloadService serverAddr: znj.bcl.com.cn:80
+09-24 04:48:27:788 DEBUG [service.DownloadService]-[line:79] 支持: 断电续传; zip包更新程序
+09-24 04:48:31:163 DEBUG [service.DownloadService]-[line:2433] onDestroy
+09-25 05:16:24:972 DEBUG [service.DownloadService]-[line:78] bcl debug DownloadService serverAddr: znj.bcl.com.cn:80
+09-25 05:16:24:977 DEBUG [service.DownloadService]-[line:79] 支持: 断电续传; zip包更新程序
+09-25 05:16:27:010 DEBUG [service.DownloadService]-[line:2433] onDestroy

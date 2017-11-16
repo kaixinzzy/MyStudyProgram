@@ -1,0 +1,79 @@
+
+ext{
+    /*
+    统一管理配置文件步骤如下：
+    1、项目根目录下新建config.gradle，并声明配置信息
+    2、项目根目录下build.gradle中添加
+        apply from: 'config.gradle'
+    3、app项目的build.gradle中调用声明的配置
+        def lib = rootProject.ext.dependencies
+        dependencies {
+            compile lib.multi
+        ｝
+     */
+    android = [
+            //最新的版本 优点：
+            // 1、自动向下兼容
+            // 2、以前用低版本过期的方法，会警告。
+            compileSdkVersion : 23,         // 编译SDK的版本，注：编译版本最好跟目标版本统一，而且用最新；官方建议
+//            buildToolsVersion : "25.0.3",  // build tools的版本
+            buildToolsVersion : "27.0.1",   // build tools的版本
+            minSdkVersion     : 10,         //当前市场最小版本是2.3.3，即10API，参考：https://developer.android.com/about/dashboards/index.html#Screens
+            targetSdkVersion  : 23,         //目标版本
+            versionCode       : 1,
+            versionName       : "1.0"
+    ]
+
+    sourceSets = [
+            manifest_srcFile  : 'AndroidManifest.xml',
+            java_srcDirs      : 'src',
+            resources_srcDirs      : 'src',
+            aidl_srcDirs      : 'src',
+            renderscript_srcDirs : 'src',
+            res_srcDirs       : 'res',
+            assets_srcDirs    : 'assets',
+    ]
+
+    others = [
+            minifyEnabled     : true,      // 是否进行混淆
+            shrinkResources   : true,      //去除没有用到的资源文件，要求minifyEnabled为true才生效
+
+            abortOnError      : false,     //移除lint检查的error
+            disable           : 'NewApi',  //禁止掉某些lint检查
+
+            dataBinding_enabled : true,    //开启datBinding
+    ]
+
+    signingConfigs = [
+            //keystorePropertiesFile : usingInhand.toBoolean ? "signingConfigs" : "",
+    ]
+
+    //support库在sdk中的位置：sdk/extras/android/m2repository/com/android/support
+    versions = [
+            junit : "4.12",
+            supportLibs : "23.1.1"
+//            supportLibs : "25.0.1"
+    ]
+
+    dependencies = [
+            junit       : "junit:junit:$versions.junit",
+            supportV4   : "com.android.support:support-v4:$versions.supportLibs",
+            supportAppCompat     : "com.android.support:appcompat-v7:$versions.supportLibs",
+            supportDesign        : "com.android.support:design:$versions.supportLibs",
+            supportRecyclerView  : "com.android.support:recyclerview-v7:$versions.supportLibs",
+            supportCardView      : "com.android.support:cardview-v7:$versions.supportLibs",
+            supportAnnotations   : "com.android.support:support-annotations:$versions.supportLibs",
+//            otherPicasso: project('Library_Other:picasso_2.5.2'),
+//            otherGlide  : project('Library_Other:glide_4.2.0'),
+            zzyGlide    : project(':Library_3_IMG_Glide'),
+            multi       : project(':LibraryMulti'),
+            custom      : project(':LibraryCustom'),
+//            service     : project(':LibraryService'),
+//            fragment    : project(':LibraryFragment'),
+//            handler     : project(':LibraryHandler'),
+//            zxing       : project(':LibraryZxing'),
+            databinding : project(':LibraryDataBinding'),
+//            netAndData  : project(':LibraryNetAndData')
+
+    ]
+}

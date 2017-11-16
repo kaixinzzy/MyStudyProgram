@@ -1,0 +1,24 @@
+09-22 03:09:22:588 DEBUG [bclalipayupd.UpdActivity]-[line:165] bcl debug current version : 2.04.00.A3
+09-22 03:09:22:597 DEBUG [bclalipayupd.UpdActivity]-[line:243] 更新准备中...
+09-22 03:09:33:134 DEBUG [bclalipayupd.UpdActivity]-[line:376] Is core need update : true. fileName is automatCore.apk
+09-22 03:09:33:141 DEBUG [bclalipayupd.UpdActivity]-[line:376] Is maintenance need update : true. fileName is automatMaintenance.apk
+09-22 03:09:33:145 DEBUG [bclalipayupd.UpdActivity]-[line:376] Is download need update : true. fileName is automatDownload.apk
+09-22 03:09:33:150 DEBUG [bclalipayupd.UpdActivity]-[line:376] Is guide need update : true. fileName is automatGuide.apk
+09-22 03:09:33:154 DEBUG [bclalipayupd.UpdActivity]-[line:376] Is push need update : true. fileName is automatPushService.apk
+09-22 03:09:33:158 DEBUG [bclalipayupd.UpdActivity]-[line:376] Is daemon need update : true. fileName is automatDaemonService.apk
+09-22 03:09:33:162 DEBUG [bclalipayupd.UpdActivity]-[line:376] Is usb need update : true. fileName is USBBroadcast.apk
+09-22 03:09:33:165 DEBUG [bclalipayupd.UpdActivity]-[line:376] Is breakdown need update : true. fileName is automatBreakdown.apk
+09-22 03:09:33:167 DEBUG [bclalipayupd.UpdActivity]-[line:376] Is machine_service need update : false. 
+09-22 03:09:33:168 DEBUG [bclalipayupd.UpdActivity]-[line:376] Is libsdk need update : false. 
+09-22 03:09:33:169 DEBUG [bclalipayupd.UpdActivity]-[line:376] Is bootanimation need update : false. 
+09-22 03:09:33:171 DEBUG [bclalipayupd.UpdActivity]-[line:376] Is libvguang need update : false. 
+09-22 03:09:33:172 DEBUG [bclalipayupd.UpdActivity]-[line:376] Is services need update : false. 
+09-22 03:09:33:174 DEBUG [bclalipayupd.UpdActivity]-[line:376] Is dynamic need update : false. 
+09-22 03:09:33:371 DEBUG [bclalipayupd.UpdActivity]-[line:752] com.bcl.usbbroadcast doesn't exist
+09-22 03:09:33:465 DEBUG [bclalipayupd.UpdActivity]-[line:752] cn.com.bcl.daemon.service doesn't exist
+09-22 03:09:33:637 DEBUG [bclalipayupd.UpdActivity]-[line:729] different shared user in maintenance, backup pay config file
+09-22 03:09:33:737 DEBUG [bclalipayupd.UpdActivity]-[line:752] cn.com.bcl.push.service doesn't exist
+09-22 03:09:34:508 DEBUG [bclalipayupd.UpdActivity]-[line:752] cn.com.bcl.download.service doesn't exist
+09-22 03:09:34:658 DEBUG [bclalipayupd.UpdActivity]-[line:605] install prepare complete, update is ready
+09-22 03:09:34:660 DEBUG [bclalipayupd.UpdActivity]-[line:490] start update
+09-22 03:10:01:566 DEBUG [bclalipayupd.UpdActivity]-[line:544] remove all filse in /storage/emulated/0/Maintenance/apk

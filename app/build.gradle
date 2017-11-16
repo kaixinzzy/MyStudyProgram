@@ -1,0 +1,101 @@
+apply plugin: 'com.android.application'
+
+//首先需要在Project的build.gradle中配置：apply from: 'config.gradle'  用来引入Project下的config.gradle文件
+def config = rootProject.ext.android   //配置
+def lib = rootProject.ext.dependencies //依赖
+def sou = rootProject.ext.sourceSets   //源文件目录设置
+def others = rootProject.ext.others    //其他常用配置
+
+android {
+    // 编译SDK的版本
+    compileSdkVersion config.compileSdkVersion
+    // build tools的版本
+    buildToolsVersion config.buildToolsVersion
+    //默认配置
+    defaultConfig {
+        //应用的包名
+        applicationId "cn.com.zzy.project"
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+    }
+
+    //---------------------------- 签名开始 ----------------------------
+    /*def keystorePropertiesFile = new File(project.rootDir, "signingConfigs${File.separator}" +
+            "gemotech.properties")
+    def keystoreProperties = new Properties()
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+    signingConfigs {
+        release {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storePassword keystoreProperties['storePassword']
+            storeFile file("${project.rootDir}${File.separator}signingConfigs${File.separator}${keystoreProperties['storeFile']}" as File)
+        }
+        debug {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storePassword keystoreProperties['storePassword']
+            storeFile file("${project.rootDir}${File.separator}signingConfigs${File.separator}${keystoreProperties['storeFile']}" as File)
+        }
+
+
+    }*/
+    //---------------------------- 重新定义目录开始 ----------------------------
+    //源文件目录设置
+    sourceSets {
+        main {
+            manifest.srcFile sou.manifest_srcFile
+            java.srcDirs = [sou.java_srcDirs]
+            resources.srcDirs = [sou.resources_srcDirs]
+            aidl.srcDirs = [sou.aidl_srcDirs]
+            renderscript.srcDirs = [sou.renderscript_srcDirs]
+            res.srcDirs = [sou.res_srcDirs]
+            assets.srcDirs = [sou.assets_srcDirs]
+        }
+    }
+    buildTypes {
+        //release版本配置
+        release {
+            //指定使用上面配置好的签名内容
+            //signingConfig signingConfigs.release
+            // 是否进行混淆
+            minifyEnabled others.minifyEnabled
+            //去除没有用到的资源文件，要求minifyEnabled为true才生效
+            shrinkResources others.shrinkResources
+            //规则
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        //debug版本配置
+        debug {
+            //signingConfig signingConfigs.debug
+        }
+    }
+    // lint配置
+    lintOptions {
+        //移除lint检查的error
+        abortOnError others.abortOnError
+        //禁止掉某些lint检查
+        disable others.disable
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    compile lib.multi
+    compile lib.custom
+//    compile lib.service
+//    compile lib.zxing
+//    compile lib.fragment
+//    compile lib.netAndData
+    compile lib.databinding
+    compile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+//    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+//    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+
+    //compile project(':LibraryMulti')
+}

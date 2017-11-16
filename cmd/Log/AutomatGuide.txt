@@ -1,0 +1,88 @@
+09-22 03:10:37:359 DEBUG [service.guideBroadcastReceiver]-[line:98] 流量清零
+09-22 03:10:37:377 DEBUG [service.guideService]-[line:107] bcl debug guideService serverAddr: znj.bcl.com.cn:80
+09-22 03:10:37:388 DEBUG [service.guideService]-[line:214] bcl debug current versionName: 2.04.00.A3
+09-22 03:10:38:009 DEBUG [service.guideService]-[line:529] back up file (cn.com.bcl.maintenance.xml) exists, do not import res files. 非初次启动.原因:share uid 改变
+09-22 03:10:38:440 DEBUG [service.guideService]-[line:564] sharedUser: cn.com.bcl
+09-22 03:10:38:503 DEBUG [service.guideService]-[line:611] sharedUser: null
+09-22 03:10:38:509 DEBUG [service.guideService]-[line:614] uninstall com.example.upgrade
+09-22 03:10:40:590 DEBUG [service.guideService]-[line:853] 当前版本号为2.04.00.A3
+09-22 03:10:40:625 DEBUG [service.guideService]-[line:119] 删除sn临时文件
+09-22 03:10:40:906 DEBUG [service.guideService]-[line:177] snNum = 40201406261424078896122498691067040027B15A0002
+09-22 03:10:40:910 DEBUG [service.guideService]-[line:132] SN取得成功
+09-22 03:11:00:600 DEBUG [service.guideService]-[line:267] 网络有信号
+09-22 03:11:00:762 DEBUG [service.guideService]-[line:1232] 启动推送程序
+09-22 03:11:00:774 DEBUG [service.guideService]-[line:1219] 启动下载程序, 检测是否有更新
+09-22 03:11:00:792 DEBUG [service.guideService]-[line:1206] 启动监控程序
+09-22 03:11:01:988 DEBUG [service.guideService]-[line:939] server time: 20170922031102773
+09-22 03:11:01:996 DEBUG [service.guideService]-[line:945] set current time with bcl server time
+09-22 03:11:02:775 DEBUG [service.guideService]-[line:455] 时间校验正常
+09-22 03:11:03:405 DEBUG [service.guideService]-[line:1052] 终端授权成功
+09-22 03:11:03:417 DEBUG [service.guideService]-[line:1241] 启动主程序
+09-22 12:59:54:335 DEBUG [service.guideService]-[line:107] bcl debug guideService serverAddr: znj.bcl.com.cn:80
+09-22 12:59:54:395 DEBUG [service.guideService]-[line:214] bcl debug current versionName: 2.04.00.A3
+09-22 12:59:55:037 DEBUG [service.guideService]-[line:599] com.example.bclalipayupd doesn't exist
+09-22 12:59:55:046 DEBUG [service.guideService]-[line:637] com.example.upgrade doesn't exist
+09-22 12:59:56:632 DEBUG [service.guideService]-[line:853] 当前版本号为2.04.00.A3
+09-22 12:59:56:654 DEBUG [service.guideService]-[line:119] 删除sn临时文件
+09-22 12:59:56:939 DEBUG [service.guideService]-[line:177] snNum = 40201406261424078896122498691067040027B15A0002
+09-22 12:59:56:944 DEBUG [service.guideService]-[line:132] SN取得成功
+09-22 13:00:17:056 DEBUG [service.guideService]-[line:267] 网络有信号
+09-22 13:00:17:309 DEBUG [service.guideService]-[line:1232] 启动推送程序
+09-22 13:00:17:332 DEBUG [service.guideService]-[line:1219] 启动下载程序, 检测是否有更新
+09-22 13:00:17:365 DEBUG [service.guideService]-[line:1206] 启动监控程序
+09-22 13:00:18:296 DEBUG [service.guideService]-[line:939] server time: 20170922130018964
+09-22 13:00:18:298 DEBUG [service.guideService]-[line:945] set current time with bcl server time
+09-22 13:00:18:967 DEBUG [service.guideService]-[line:455] 时间校验正常
+09-22 13:00:19:685 DEBUG [service.guideService]-[line:1052] 终端授权成功
+09-22 13:00:19:704 DEBUG [service.guideService]-[line:1241] 启动主程序
+09-23 04:11:39:644 DEBUG [service.guideService]-[line:107] bcl debug guideService serverAddr: znj.bcl.com.cn:80
+09-23 04:11:39:674 DEBUG [service.guideService]-[line:214] bcl debug current versionName: 2.04.00.A3
+09-23 04:11:40:543 DEBUG [service.guideService]-[line:599] com.example.bclalipayupd doesn't exist
+09-23 04:11:40:554 DEBUG [service.guideService]-[line:637] com.example.upgrade doesn't exist
+09-23 04:11:42:454 DEBUG [service.guideService]-[line:853] 当前版本号为2.04.00.A3
+09-23 04:11:42:471 DEBUG [service.guideService]-[line:119] 删除sn临时文件
+09-23 04:11:42:766 DEBUG [service.guideService]-[line:177] snNum = 40201406261424078896122498691067040027B15A0002
+09-23 04:11:42:770 DEBUG [service.guideService]-[line:132] SN取得成功
+09-23 04:12:02:958 DEBUG [service.guideService]-[line:267] 网络有信号
+09-23 04:12:03:189 DEBUG [service.guideService]-[line:1232] 启动推送程序
+09-23 04:12:03:213 DEBUG [service.guideService]-[line:1219] 启动下载程序, 检测是否有更新
+09-23 04:12:03:236 DEBUG [service.guideService]-[line:1206] 启动监控程序
+09-23 04:12:03:987 DEBUG [service.guideService]-[line:939] server time: 20170923041205153
+09-23 04:12:03:991 DEBUG [service.guideService]-[line:945] set current time with bcl server time
+09-23 04:12:05:155 DEBUG [service.guideService]-[line:455] 时间校验正常
+09-23 04:12:05:752 DEBUG [service.guideService]-[line:1052] 终端授权成功
+09-23 04:12:05:755 DEBUG [service.guideService]-[line:1241] 启动主程序
+09-24 04:48:04:539 DEBUG [service.guideService]-[line:107] bcl debug guideService serverAddr: znj.bcl.com.cn:80
+09-24 04:48:04:644 DEBUG [service.guideService]-[line:214] bcl debug current versionName: 2.04.00.A3
+09-24 04:48:05:273 DEBUG [service.guideService]-[line:599] com.example.bclalipayupd doesn't exist
+09-24 04:48:05:343 DEBUG [service.guideService]-[line:637] com.example.upgrade doesn't exist
+09-24 04:48:07:100 DEBUG [service.guideService]-[line:853] 当前版本号为2.04.00.A3
+09-24 04:48:07:121 DEBUG [service.guideService]-[line:119] 删除sn临时文件
+09-24 04:48:07:312 DEBUG [service.guideService]-[line:177] snNum = 40201406261424078896122498691067040027B15A0002
+09-24 04:48:07:316 DEBUG [service.guideService]-[line:132] SN取得成功
+09-24 04:48:27:374 DEBUG [service.guideService]-[line:267] 网络有信号
+09-24 04:48:27:611 DEBUG [service.guideService]-[line:1232] 启动推送程序
+09-24 04:48:27:635 DEBUG [service.guideService]-[line:1219] 启动下载程序, 检测是否有更新
+09-24 04:48:27:664 DEBUG [service.guideService]-[line:1206] 启动监控程序
+09-24 04:48:28:531 DEBUG [service.guideService]-[line:939] server time: 20170924044830098
+09-24 04:48:28:533 DEBUG [service.guideService]-[line:945] set current time with bcl server time
+09-24 04:48:30:100 DEBUG [service.guideService]-[line:455] 时间校验正常
+09-24 04:48:30:753 DEBUG [service.guideService]-[line:1052] 终端授权成功
+09-24 04:48:30:756 DEBUG [service.guideService]-[line:1241] 启动主程序
+09-25 05:16:01:464 DEBUG [service.guideService]-[line:107] bcl debug guideService serverAddr: znj.bcl.com.cn:80
+09-25 05:16:01:482 DEBUG [service.guideService]-[line:214] bcl debug current versionName: 2.04.00.A3
+09-25 05:16:02:052 DEBUG [service.guideService]-[line:599] com.example.bclalipayupd doesn't exist
+09-25 05:16:02:221 DEBUG [service.guideService]-[line:637] com.example.upgrade doesn't exist
+09-25 05:16:04:474 DEBUG [service.guideService]-[line:853] 当前版本号为2.04.00.A3
+09-25 05:16:04:479 DEBUG [service.guideService]-[line:119] 删除sn临时文件
+09-25 05:16:04:784 DEBUG [service.guideService]-[line:177] snNum = 40201406261424078896122498691067040027B15A0002
+09-25 05:16:04:789 DEBUG [service.guideService]-[line:132] SN取得成功
+09-25 05:16:24:586 DEBUG [service.guideService]-[line:267] 网络有信号
+09-25 05:16:24:818 DEBUG [service.guideService]-[line:1232] 启动推送程序
+09-25 05:16:24:842 DEBUG [service.guideService]-[line:1219] 启动下载程序, 检测是否有更新
+09-25 05:16:24:863 DEBUG [service.guideService]-[line:1206] 启动监控程序
+09-25 05:16:25:748 DEBUG [service.guideService]-[line:939] server time: 20170925051626034
+09-25 05:16:25:750 DEBUG [service.guideService]-[line:945] set current time with bcl server time
+09-25 05:16:26:041 DEBUG [service.guideService]-[line:455] 时间校验正常
+09-25 05:16:26:737 DEBUG [service.guideService]-[line:1052] 终端授权成功
+09-25 05:16:26:759 DEBUG [service.guideService]-[line:1241] 启动主程序

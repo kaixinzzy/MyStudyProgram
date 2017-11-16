@@ -1,0 +1,8 @@
+<resources>
+
+    <style name="Theme.Transparent" parent="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <!--<item name="android:windowDisablePreview">true</item>-->
+        <item name="android:windowBackground">@drawable/bg</item>
+    </style>
+
+</resources>

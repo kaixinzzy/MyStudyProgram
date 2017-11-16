@@ -1,0 +1,18 @@
+include ':app'
+//include ':Library'
+//include 'Library_Other:picasso_2.5.2'
+//include 'Library_Other:glide_4.2.0'
+include ':Library_3_IMG_Glide'
+include ':LibraryJava'
+include ':LibraryMulti'
+include ':LibraryCustom'
+//include ':LibraryService'
+//include ':LibraryContentProvider'
+//include ':LibraryFragment'
+//include ':LibraryHandler'
+//include ':LibraryZxing'
+include ':LibraryDataBinding'
+//include ':LibraryNetAndData'
+
+println "Project settings.gradle##########################################################################################################"
+println "current server address is " + SERVICE_ADDR + " and port is " + SERVICE_PORT

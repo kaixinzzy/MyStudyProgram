@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="user" type="cn.com.zzy.model.User"/>
+
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@{user.iconBitmap}"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:maxWidth="100dp"
+            android:maxHeight="150dp"
+            app:imageUrl="@{user.iconUrl}"
+            app:placeHolder="@{user.iconPlaceHolder}"
+            app:error="@{user.iconError}"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+            tools:text="firstName"
+            android:text='@{user.firstName!=null ? user.firstName : "没有数据"}'
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+            tools:text="lastName"
+            android:text='@{user.lastName!=null ? user.lastName : "没有数据"}'/>
+    </LinearLayout>
+</layout>

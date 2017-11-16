@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="cn.com.zzy.contentprovider"
+    >
+    <!--manifest标签中的package不可以跟model中相同，不然编译失败-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/weixin"
+        android:label="@string/app_name">
+
+        <!--
+        android:authorities="cn.com.zzy.contentprovider" 外部调用时指定ContentProvider的标识
+        android:exported="true"  是否对外部开放
+        -->
+        <provider
+            android:authorities="cn.com.zzy.contentprovider"
+            android:name=".MyContentProvider"
+            android:exported="true"/>
+
+    </application>
+
+</manifest>

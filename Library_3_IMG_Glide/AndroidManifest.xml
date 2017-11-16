@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="cn.com.zzy.glide">
+
+    <!-- manifest标签中的package不可以跟model中相同，不然编译失败 -->
+    <application>
+        <activity android:name="cn.com.zzy.GlideActivity">
+        </activity>
+    </application>
+
+</manifest>

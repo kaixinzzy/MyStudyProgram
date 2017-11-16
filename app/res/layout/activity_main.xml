@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".ac.MainActivity">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"/>
+
+    <cn.com.zzy.custom.CornerRelativeLayout
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="2dp"
+        android:layout_centerInParent="true"
+        app:round_corner="17dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test"
+            />
+
+    </cn.com.zzy.custom.CornerRelativeLayout>
+
+    <cn.com.zzy.custom.TextViewLeftDrawablesCenter
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:drawableLeft="@mipmap/ic_launcher"
+        android:drawablePadding="10dp"
+        android:text="Hello World!"
+        android:gravity="center_vertical"
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="5dp"/>
+
+    <!--<cn.com.zzy.custom.CornerRelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="5dp"
+        app:radius="30dip">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg"
+            android:scaleType="fitXY"/>
+    </cn.com.zzy.custom.CornerRelativeLayout>-->
+    <!--<cn.com.zzy.custom.CornerLinearLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        app:radius="30dip">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:src="@drawable/bg"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:src="@drawable/bg"
+            android:scaleType="fitXY"/>
+
+    </cn.com.zzy.custom.CornerLinearLayout>-->
+
+
+
+
+</LinearLayout>
