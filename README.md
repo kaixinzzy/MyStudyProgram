@@ -1,2 +1,3 @@
 # MyStudyProgram
-StudyProgram
+
+日常学习测试项目。
