@@ -67,6 +67,7 @@ ext{
 //            otherPicasso: project('Library_Other:picasso_2.5.2'),
 //            otherGlide  : project('Library_Other:glide_4.2.0'),
             zzyGlide    : project(':Library_3_IMG_Glide'),
+            zzyGlide_3_7_0    : project(':Library_3_IMG_Glide_3.7.0'),
             multi       : project(':LibraryMulti'),
             custom      : project(':LibraryCustom'),
 //            service     : project(':LibraryService'),

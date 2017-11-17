@@ -93,6 +93,7 @@ dependencies {
 //    compile lib.fragment
 //    compile lib.netAndData
     compile lib.databinding
+    compile lib.zzyGlide_3_7_0
     compile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
 //    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
 //    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
