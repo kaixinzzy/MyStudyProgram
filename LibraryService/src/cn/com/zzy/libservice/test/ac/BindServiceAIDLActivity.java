@@ -38,9 +38,14 @@ public class BindServiceAIDLActivity extends Activity {
     }
 
     private IMyListener listener = new IMyListener.Stub(){
+        //此方法会被Service端调用(回调方法)
         @Override
         public void newSerialMessageNotify(SerialMessage serialMessage) throws RemoteException {
-            myHandler.obtainMessage(0, serialMessage).sendToTarget();
+            MyLog.Log("~~~", "listener Thread id ");
+            Message message = Message.obtain();
+            message.what = 0;
+            message.obj = serialMessage;
+            myHandler.handleMessage(message);
         }
     };
 
@@ -50,20 +55,39 @@ public class BindServiceAIDLActivity extends Activity {
         public void onServiceDisconnected(ComponentName name) {
             MyLog.Log("~~~", "bindServiceAIDL 连接失败");
             myBinderAIDL = null;
+            onBindService();
         }
 
         @Override   //连接成功
         public void onServiceConnected(ComponentName name, IBinder service) {
             MyLog.Log("~~~", "bindServiceAIDL 连接成功");
             myBinderAIDL = IMyInterface.Stub.asInterface(service);
+            registerListener();//注册回调接口
 
+        }
+    };
+
+    //注册回调接口 and 销毁回调接口------------------------------------------------------------------------------------------------------
+
+    private void registerListener() {
+        try {
+            myBinderAIDL.registerListener(listener);//设置回调
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void unregisterListener() {
+        if (myBinderAIDL != null && myBinderAIDL.asBinder().isBinderAlive()) {
             try {
-                myBinderAIDL.registerListener(listener);
+                myBinderAIDL.unregisterListener(listener);
             } catch (RemoteException e) {
                 e.printStackTrace();
             }
         }
-    };
+    }
+
+    //绑定服务 and 解除绑定服务----------------------------------------------------------------------------------------------------------
 
     private void onBindService() {
         Intent bindIntent = new Intent(getApplicationContext(), BindServiceAIDL.class);
@@ -77,6 +101,8 @@ public class BindServiceAIDLActivity extends Activity {
             MyLog.Log("~~~", "当前服务非处于未绑定状态，请勿执行解绑操作");
         }
     }
+
+    // Activity 生命周期----------------------------------------------------------------------------------------------------------------
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,7 +125,8 @@ public class BindServiceAIDLActivity extends Activity {
 
     @Override
     protected void onDestroy() {
-        super.onDestroy();
+        unregisterListener();//销毁回调接口
         onUnBindeSsercie();//解除绑定服务
+        super.onDestroy();
     }
 }
