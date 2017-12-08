@@ -3,9 +3,12 @@
           package="cn.com.zzy.glide">
 
     <!-- manifest标签中的package不可以跟model中相同，不然编译失败 -->
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application>
         <activity android:name="cn.com.zzy.GlideActivity">
+        </activity>
+        <activity android:name="cn.com.zzy.LruCache.PhotoWallActivity">
         </activity>
     </application>
 

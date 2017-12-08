@@ -19,7 +19,11 @@
             生成新的进程，进程名为：com.zzy.aidl
             这个进程是全局的。这将允许在不同应用中的各种组件可以共享一个进程，从而减少资源的占用。
         -->
-        <service android:name=".BindServiceAIDL" android:process="com.zzy.aidl"/>
+        <service
+            android:name=".BindServiceAIDL"
+            android:process="com.zzy.aidl"/>
+
+        <activity android:name=".test.ac.BindServiceAIDLActivity"/>
     </application>
 
 </manifest>

@@ -6,6 +6,7 @@ import java.util.HashMap;
  * java日常疑惑测试
  */
 public class JavaRun {
+    public static boolean flag = true;
 
     public static void main (String[] args){
         final JavaRun javaRun = new JavaRun();
@@ -29,6 +30,7 @@ public class JavaRun {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }*/
+
 
     }
 

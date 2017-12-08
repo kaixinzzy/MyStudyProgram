@@ -1,4 +1,4 @@
-package cn.com.zzy.T;
+package cn.com.zzy.collection;
 
 /**
  * Created by BCLZzy on 2017/11/2.

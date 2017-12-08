@@ -1,4 +1,4 @@
-package cn.com.zzy.T;
+package cn.com.zzy.collection;
 
 import java.util.ArrayList;
 import java.util.Collections;

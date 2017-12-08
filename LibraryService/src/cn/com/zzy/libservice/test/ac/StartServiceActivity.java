@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
-import android.os.RemoteException;
 import android.view.View;
 
 import cn.com.zzy.aidl.IMyInterface;
@@ -75,12 +74,12 @@ public class StartServiceActivity extends Activity {
         @Override   //绑定成功
         public void onServiceConnected(ComponentName name, IBinder service) {MyLog.Log("~~~", "bindServiceAIDL 连接成功");
             myBinderAIDL = IMyInterface.Stub.asInterface(service);
-            try {
+            /*try {
                 String s = myBinderAIDL.getInfor("I'm Activity");
                 MyLog.Log("~~~", "Service 返回给 Activity 的字符串是：" + s);
             } catch (RemoteException e) {
                 e.printStackTrace();
-            }
+            }*/
         }
     };
     //绑定服务

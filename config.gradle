@@ -70,7 +70,7 @@ ext{
             zzyGlide_3_7_0    : project(':Library_3_IMG_Glide_3_7_0'),
             multi       : project(':LibraryMulti'),
             custom      : project(':LibraryCustom'),
-//            service     : project(':LibraryService'),
+            service     : project(':LibraryService'),
 //            fragment    : project(':LibraryFragment'),
 //            handler     : project(':LibraryHandler'),
 //            zxing       : project(':LibraryZxing'),

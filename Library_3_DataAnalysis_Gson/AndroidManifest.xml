@@ -1,0 +1,6 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="cn.com.zzy.gson"
+    >
+    <!--manifest标签中的package不可以跟model中相同，不然编译失败-->
+
+</manifest>
